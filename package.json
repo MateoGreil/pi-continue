@@ -1,0 +1,29 @@
+{
+  "name": "pi-continue",
+  "version": "0.1.0",
+  "description": "Resume interrupted Pi work without adding a message",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateoGreil/pi-continue.git"
+  },
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./src/index.js"]
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --experimental-test-module-mocks --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.0",
+    "@earendil-works/pi-ai": "1.5.0"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}
